@@ -11,7 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder',          '~> 1.2'
 gem 'figaro',            '0.6.4'
-gem 'devise'
+gem 'devise',            '3.0.0.rc'
 gem 'omniauth-facebook', '1.4.1'
 
 group :doc do

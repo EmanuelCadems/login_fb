@@ -1,0 +1,8 @@
+<p> <%= link_to "Home", root_path %> </p>
+<p> <%= link_to "Personas", people_path %> </p>
+<% if user_signed_in?  %>
+  <p> <%= current_user.email %></p>
+  <p> <%= link_to "Salir", destroy_user_session_path, method: :delete %></p>
+<% else %>
+  <p> <%= link_to "Iniciar Sesion", new_user_session_path %> </p>
+<% end %>
